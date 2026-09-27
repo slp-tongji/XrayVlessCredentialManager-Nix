@@ -24,14 +24,5 @@
           default = package;
         }
       );
-
-      nixosModules =
-        let
-          module = ./nixos-module;
-        in
-        {
-          xray-vless-credential-manager = module;
-          default = module;
-        };
     };
 }
